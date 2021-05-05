@@ -9,7 +9,7 @@ import tr.gov.nvi.tckimlik.WS.KPSPublicSoapProxy;
 public class MernisServiceAdapter implements CustomerCheckService {
 
 	@Override
-	public boolean chckIfRealPerson(Customer customer) throws NumberFormatException, RemoteException {
+	public boolean checkIfRealPerson(Customer customer) throws NumberFormatException, RemoteException {
 		KPSPublicSoapProxy client = new KPSPublicSoapProxy();
 		
 		boolean result = client.TCKimlikNoDogrula(
